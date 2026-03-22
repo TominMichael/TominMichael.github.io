@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomin Michael | Robotics & Automation Engineer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Tomin<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in-section">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <h3 class="highlight-text">Hi, I'm</h3>
+            <h1 class="glitch-text name-glow" data-text="Tomin Michael">Tomin Michael</h1>
+            <h2 class="role">Robotics & Automation Engineer</h2>
+            <p class="subtitle mt-10" style="color: var(--text-muted);">👉 "Bridging Simulation, AI, and Real-World Robotics Systems"</p>
+            <div class="tech-stack-badges mt-20">
+                <span class="badge">ROS2</span><span class="badge">Nav2</span><span class="badge">PX4</span><span class="badge">Gazebo</span><span class="badge">PyTorch</span><span class="badge">YOLOv8</span><span class="badge">ESP32</span><span class="badge">Docker</span><span class="badge">Isaac Sim</span>
+            </div>
+            <p class="tagline mt-20">"Building Intelligent Autonomous Systems with Robotics, AI, and Real-World Integration"</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">🚀 View My Work</a>
+                <a href="#contact" class="btn btn-secondary">📄 Download CV</a>
+            </div>
+            <div class="social-links-hero">
+                <a href="https://linkedin.com/in/tomin-michael" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/TominMichael" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:tominmichael2003@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>👉 Scroll Down ↓</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in-section">
+        <div class="section-header">
+            <h2 class="title">About <span>Me</span></h2>
+        </div>
+        <div class="container about-grid">
+            <div class="about-text glass-card">
+                <p>I am a <strong>Robotics & Automation Engineer</strong> specializing in designing and deploying scalable autonomous systems. With hands-on experience in <strong>ROS 2, LiDAR-based SLAM, Autonomous Navigation</strong>, and embedded control, I bridge the gap between abstract algorithms and robust hardware performance.</p>
+                <p>My expertise extends beyond navigation. I develop deep learning pipelines for perception tasks, such as real-time <strong>structural crack detection</strong> and <strong>object detection</strong> processing directly on-board autonomous drones and vehicles.</p>
+                
+                <h4 class="highlight-text mt-20">Key Highlights</h4>
+                <ul class="highlights-list">
+                    <li><i class="fa-solid fa-check text-cyan"></i> Real-world robotics deployment & Sim-to-Real calibration</li>
+                    <li><i class="fa-solid fa-check text-cyan"></i> Deep learning for edge perception (Crack Detection, YOLOv8)</li>
+                    <li><i class="fa-solid fa-check text-cyan"></i> Strong sensor fusion integration (IMU + Encoders + GPS/LiDAR)</li>
+                </ul>
+            </div>
+            <div class="about-stats glass-card text-center flex-center-col">
+                <i class="fa-solid fa-robot big-icon neon-text"></i>
+                <h3 class="mt-20">Passionate about Automation</h3>
+                <p>Actively building systems that map, navigate, and perceive.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in-section">
+        <div class="section-header">
+            <h2 class="title">Technical <span>Skills</span></h2>
+        </div>
+        <div class="container skills-grid">
+            <!-- Robotics -->
+            <div class="skill-category glass-card">
+                <div class="category-header">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h3>Robotics & Navigation</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">ROS 2</span>
+                    <span class="tag">Nav2</span>
+                    <span class="tag">SLAM (Cartographer)</span>
+                    <span class="tag">Odometry</span>
+                    <span class="tag">Differential Drive Kinematics</span>
+                    <span class="tag">PX4 Autopilot</span>
+                    <span class="tag">Sensor Fusion (EKF)</span>
+                </div>
+            </div>
+            
+            <!-- Programming -->
+            <div class="skill-category glass-card">
+                <div class="category-header">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programming</h3>
+                </div>
+                <ul class="skill-bars">
+                    <li>
+                        <div class="skill-info"><span>Python</span><span>90%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </li>
+                    <li>
+                        <div class="skill-info"><span>C++</span><span>80%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </li>
+                    <li>
+                        <div class="skill-info"><span>Embedded C</span><span>75%</span></div>
+                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Embedded -->
+            <div class="skill-category glass-card">
+                <div class="category-header">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Embedded Systems</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">ESP32</span>
+                    <span class="tag">Raspberry Pi</span>
+                    <span class="tag">Teensy</span>
+                    <span class="tag">micro-ROS</span>
+                    <span class="tag">PID Control</span>
+                </div>
+            </div>
+
+            <!-- AI & Machine Learning -->
+            <div class="skill-category glass-card">
+                <div class="category-header">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>AI & Machine Learning</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">U-Net++ (EfficientNet-B7)</span>
+                    <span class="tag">YOLOv8</span>
+                    <span class="tag">Custom Loss Functions</span>
+                    <span class="tag">Dataset Engineering</span>
+                    <span class="tag">Model Optimization</span>
+                </div>
+            </div>
+
+            <!-- Simulation & Planning -->
+            <div class="skill-category glass-card">
+                <div class="category-header">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Simulation & Planning</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Gazebo</span>
+                    <span class="tag">Isaac Sim</span>
+                    <span class="tag">Hardware-in-the-Loop (HITL)</span>
+                    <span class="tag">Sim-to-Real Transfer</span>
+                    <span class="tag">Trajectory Generation</span>
+                    <span class="tag">Motion Planning</span>
+                </div>
+            </div>
+
+            <!-- MoveIt & Manipulation -->
+            <div class="skill-category glass-card">
+                <div class="category-header">
+                    <i class="fa-solid fa-robot"></i>
+                    <h3>MoveIt & Manipulation</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">MoveIt</span>
+                    <span class="tag">URDF Modeling</span>
+                    <span class="tag">Robot Kinematics</span>
+                </div>
+            </div>
+
+            <!-- Tools & Perception -->
+            <div class="skill-category glass-card">
+                <div class="category-header">
+                    <i class="fa-solid fa-eye"></i>
+                    <h3>Tools & Perception</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Gazebo</span>
+                    <span class="tag">RViz</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">LiDAR</span>
+                    <span class="tag">IMU</span>
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="fade-in-section">
+        <div class="section-header">
+            <h2 class="title">Professional <span>Experience</span></h2>
+        </div>
+        <div class="container timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card glowing-border">
+                    <span class="date">2024 - Present</span>
+                    <h3>Technical Officer</h3>
+                    <h4>AT Bots | Kerala, India</h4>
+                    <ul>
+                        <li>Designed and deployed a custom deep learning model for structural crack detection on autonomous drones, optimizing inference for real-time onboard processing.</li>
+                        <li>Contributed to the design and integration of robotic automation systems involving embedded controllers, sensors, and real-time software.</li>
+                        <li>Collaborated with cross-functional teams to ensure robust hardware-software integration and system-level validation.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="date">2024</span>
+                    <h3>Research Intern</h3>
+                    <h4>Robotics Research Centre, IIIT Hyderabad</h4>
+                    <ul>
+                        <li>Developed high-fidelity Gazebo simulation environments to validate autonomous drone control strategies.</li>
+                        <li>Engineered a custom autonomous mobile robot from scratch, implementing 2D LiDAR-based SLAM algorithms to generate high-resolution occupancy grid maps.</li>
+                        <li>Developed real-time differential drive kinematics and wheel odometry estimation pipelines.</li>
+                        <li>Performed Hardware-in-the-Loop (HITL) testing and PID tuning to improve stability, reducing Sim-to-Real discrepancies.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in-section">
+        <div class="section-header">
+            <h2 class="title">Featured <span>Projects</span></h2>
+        </div>
+        <div class="container projects-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card glass-card">
+                <div class="project-video-grid">
+                    <a href="https://youtube.com/shorts/TNKiXS6pXOI?feature=share" target="_blank" class="video-item" style="color: inherit; text-decoration: none;">
+                        <div class="play-btn-small"><i class="fa-solid fa-play"></i></div><p>Autonomous Navigation Demo</p>
+                    </a>
+                    <a href="https://youtube.com/shorts/SO0IZGSqh1A?feature=share" target="_blank" class="video-item" style="color: inherit; text-decoration: none;">
+                        <div class="play-btn-small"><i class="fa-solid fa-play"></i></div><p>SLAM Mapping Demo</p>
+                    </a>
+                    <a href="https://youtube.com/shorts/U1CY8A5pdCY?feature=share" target="_blank" class="video-item" style="color: inherit; text-decoration: none;">
+                        <div class="play-btn-small"><i class="fa-solid fa-play"></i></div><p>Hardware Integration Demo</p>
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Autonomous Wheelchair System</h3>
+                    <ul class="project-details-list">
+                        <li><strong>📊 Metrics:</strong> Achieved reliable real-time navigation in indoor environments</li>
+                        <li><strong>🧠 Tech Stack:</strong> ROS 2 + Nav2 + ESP32 + micro-ROS</li>
+                        <li><strong>⚙️ Key Contribution:</strong> Implemented EKF-based sensor fusion (IMU + encoders) & designed full hardware-software integration pipeline</li>
+                    </ul>
+                    <div class="project-links mt-20">
+                        <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Panda Manipulator -->
+            <div class="project-card glass-card">
+                <div class="project-video-grid" style="height: auto; min-height: 180px;">
+                    <a href="https://youtu.be/wylaeyfgNZY" target="_blank" class="video-item" style="color: inherit; text-decoration: none; padding: 1.5rem;">
+                        <div class="play-btn-small"><i class="fa-solid fa-play"></i></div><p>Autonomous Panda Simulation</p>
+                    </a>
+                    <a href="https://youtu.be/Ta4pepi8FsE" target="_blank" class="video-item" style="color: inherit; text-decoration: none; padding: 1.5rem;">
+                        <div class="play-btn-small"><i class="fa-solid fa-play"></i></div><p>NVIDIA Isaac Sim & MoViT Action</p>
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Panda Manipulator Simulation</h3>
+                    <ul class="project-details-list">
+                        <li><strong>📊 Metrics:</strong> High-fidelity collision avoidance and dynamic trajectory execution</li>
+                        <li><strong>🧠 Tech Stack:</strong> NVIDIA Isaac Sim + MoViT + Python + Franka Emika</li>
+                        <li><strong>⚙️ Key Contribution:</strong> Developed advanced simulated motion planning for complex industrial manipulation</li>
+                    </ul>
+                    <div class="project-links mt-20">
+                        <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://youtu.be/wylaeyfgNZY" class="btn btn-primary btn-sm" target="_blank">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glass-card">
+                <div class="project-img-placeholder" style="background: linear-gradient(135deg, rgba(3,105,161,0.2) 0%, rgba(3,105,161,0.5) 100%);">
+                    <i class="fa-solid fa-robot tech-bg-icon"></i>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Differential Drive Mobile Robot</h3>
+                    <ul class="project-details-list">
+                        <li><strong>📊 Metrics:</strong> Generated 5cm-resolution occupancy grid maps in real-time</li>
+                        <li><strong>🧠 Tech Stack:</strong> Cartographer + LiDAR + Odometry</li>
+                        <li><strong>⚙️ Key Contribution:</strong> Designed and built differential-drive mobile robot from scratch with custom kinematics node</li>
+                    </ul>
+                    <div class="project-links mt-20">
+                        <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glass-card">
+                <div class="project-img-placeholder" style="background: linear-gradient(135deg, rgba(8,145,178,0.2) 0%, rgba(8,145,178,0.5) 100%);">
+                    <i class="fa-solid fa-helicopter tech-bg-icon"></i>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Autonomous UAV Navigator</h3>
+                    <ul class="project-details-list">
+                        <li><strong>📊 Metrics:</strong> Seamless switching between GPS/Dead Reckoning with <0.5m drift</li>
+                        <li><strong>🧠 Tech Stack:</strong> ROS 2 + PX4 + Trajectory Control</li>
+                        <li><strong>⚙️ Key Contribution:</strong> Implemented 3D helical ascent trajectory via ROS 2 offboard control modes</li>
+                    </ul>
+                    <div class="project-links mt-20">
+                        <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/posts/tomin-michael-22356724a_flightcontrol-autonomousdrones-px4-activity-7357028285521825792-lqlU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2psnsBMRuCOsoOHTXND3MfLfQZqKBMuFQ" class="btn btn-primary btn-sm" target="_blank">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card glass-card">
+                <div class="project-img-placeholder" style="background: linear-gradient(135deg, rgba(15,118,110,0.2) 0%, rgba(15,118,110,0.5) 100%);">
+                    <i class="fa-solid fa-microscope tech-bg-icon"></i>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Crack Detection System</h3>
+                    <ul class="project-details-list">
+                        <li><strong>📊 Metrics:</strong> >92% Dice coefficient on structural anomalies at 30 FPS</li>
+                        <li><strong>🧠 Tech Stack:</strong> Deep Learning + Edge AI + PyTorch</li>
+                        <li><strong>⚙️ Key Contribution:</strong> Optimized custom segmentation model for onboard real-time inference on drones</li>
+                    </ul>
+                    <div class="project-links mt-20">
+                        <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/posts/tomin-michael-22356724a_deeplearning-computervision-ai-activity-7351145538630639616-EwR2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2psnsBMRuCOsoOHTXND3MfLfQZqKBMuFQ" class="btn btn-primary btn-sm" target="_blank">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card glass-card">
+                <div class="project-img-placeholder" style="background: linear-gradient(135deg, rgba(55,48,163,0.2) 0%, rgba(55,48,163,0.5) 100%);">
+                    <i class="fa-solid fa-car-side tech-bg-icon"></i>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Autonomous Vehicle Perception</h3>
+                    <ul class="project-details-list">
+                        <li><strong>📊 Metrics:</strong> Maintained 0.85 mAP across 10,000+ test images</li>
+                        <li><strong>🧠 Tech Stack:</strong> YOLOv8 + Object Detection</li>
+                        <li><strong>⚙️ Key Contribution:</strong> Fine-tuned deep learning models for varied lighting scenarios in Level 2 AVs</li>
+                    </ul>
+                    <div class="project-links mt-20">
+                        <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/posts/tomin-michael-22356724a_bajasae-abaja-ros2-activity-7414326414834872320-TzPL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2psnsBMRuCOsoOHTXND3MfLfQZqKBMuFQ" class="btn btn-primary btn-sm" target="_blank">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Research & Publications Section -->
+    <section id="research" class="fade-in-section">
+        <div class="section-header">
+            <h2 class="title">Publications & <span>Research Interests</span></h2>
+        </div>
+        <div class="container timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card glowing-border">
+                    <span class="date">Ongoing Research</span>
+                    <h3>DeepOdom & Sensor Fusion</h3>
+                    <ul>
+                        <li>Researching AI models for odometry estimation based on different friction torques, speed adjustments, and encoder/sensor values using DeepOdom.</li>
+                        <li>Actively learning and integrating <strong>MoveIt</strong> and <strong>Isaac Sim</strong> for advanced manipulation and physics-based simulation.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="date">Interest Areas</span>
+                    <h3>Core Robotics Subjects</h3>
+                    <ul>
+                        <li><strong>Autonomous Navigation Systems</strong> – Path planning, SLAM, obstacle avoidance, and intelligent mobility.</li>
+                        <li><strong>Deep Learning & AI Model Development</strong> – Designing and implementing ML/DL models for robotics applications.</li>
+                        <li><strong>Robotic Manipulator Projects</strong> – Advanced motion planning, control, and object manipulation.</li>
+                        <li><strong>Legged Robotics</strong> – Bio-inspired locomotion, stability control, and multi-terrain navigation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="fade-in-section">
+        <div class="section-header">
+            <h2 class="title">Awards & <span>Achievements</span></h2>
+        </div>
+        <div class="container achievements-grid">
+            <div class="achievement-card glass-card flex-row">
+                <div class="icon-box"><i class="fa-solid fa-trophy highlight-text"></i></div>
+                <div>
+                    <h3>3rd Place, Vruthi 2025</h3>
+                    <p>Clean Kerala Conclave Wasteathon. Awarded ₹25,000 for an AI-powered waste segregation solution.</p>
+                </div>
+            </div>
+            <div class="achievement-card glass-card flex-row">
+                <div class="icon-box"><i class="fa-solid fa-medal text-cyan"></i></div>
+                <div>
+                    <h3>3rd Place, National Hackathon</h3>
+                    <p>Recognized for innovative robotics solutions at Rajagiri School of Engineering.</p>
+                </div>
+            </div>
+            <div class="achievement-card glass-card flex-row">
+                <div class="icon-box"><i class="fa-solid fa-fire neon-text"></i></div>
+                <div>
+                    <h3>Top 25, Intel Gen AI Hackathon</h3>
+                    <p>Selected among 300+ teams for excellence in generative AI application development.</p>
+                </div>
+            </div>
+            <div class="achievement-card glass-card flex-row">
+                <div class="icon-box"><i class="fa-solid fa-certificate highlight-text"></i></div>
+                <div>
+                    <h3>NPTEL Certification</h3>
+                    <p>Experimental Robotics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education & Extra Section Combined -->
+    <section id="education-extra" class="fade-in-section">
+        <div class="container split-grid">
+            <!-- Education -->
+            <div class="edu-section">
+                <div class="section-header text-left">
+                    <h2 class="title" style="font-size: 2rem;">Education</h2>
+                </div>
+                <div class="glass-card">
+                    <div class="edu-header">
+                        <i class="fa-solid fa-graduation-cap big-icon text-cyan"></i>
+                        <div>
+                            <h3>B.Tech in Robotics and Automation</h3>
+                            <h4 class="highlight-text">Saintgits College of Engineering, Kerala</h4>
+                            <span class="date">Expected 2026</span>
+                        </div>
+                    </div>
+                    <p class="mt-20"><strong>Relevant Coursework:</strong> Control Systems, Robot Kinematics & Dynamics, AI, Machine Learning, Embedded Systems, Computer Vision, Mobile Robots, Robot Operating System.</p>
+                </div>
+            </div>
+            
+            <!-- Currently Building -->
+            <div class="extra-section">
+                <div class="section-header text-left">
+                    <h2 class="title" style="font-size: 2rem;">🚧 Currently <span>Building</span></h2>
+                </div>
+                <div class="glass-card">
+                    <ul class="highlights-list">
+                        <li><i class="fa-solid fa-bolt neon-text"></i> Autonomous ROS2 mobile robot with real-world navigation.</li>
+                        <li><i class="fa-solid fa-bolt neon-text"></i> Advanced SLAM + sensor fusion pipelines.</li>
+                        <li><i class="fa-solid fa-bolt neon-text"></i> Real-time embedded control systems.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section id="github-stats" class="fade-in-section">
+        <div class="section-header">
+            <h2 class="title">GitHub <span>Stats</span></h2>
+        </div>
+        <div class="container text-center">
+            <div class="glass-card" style="padding: 40px; display: inline-block; min-width: 50%;">
+                <p class="text-muted"><i class="fa-brands fa-github text-cyan" style="font-size: 3rem; margin-bottom: 1rem;"></i><br>GitHub Contribution Graph & Repo Highlights Placeholder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in-section">
+        <div class="section-header">
+            <h2 class="title">Let's Build Something <span>Amazing</span></h2>
+            <p class="subtitle mt-10" style="color: var(--text-muted);">Open for advanced roles, research opportunities, or freelance collaborations.</p>
+        </div>
+        <div class="container contact-container glass-card">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:tominmichael2003@gmail.com">tominmichael2003@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+919526735847">+91 95267 35847</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://linkedin.com/in/tomin-michael" target="_blank">linkedin.com/in/tomin-michael</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Form submission hooked up!');">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="4" required placeholder=" "></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Tomin Michael. Built with <i class="fa-solid fa-heart neon-text"></i> & Robotics.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
