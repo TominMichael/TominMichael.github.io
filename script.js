@@ -80,8 +80,15 @@ const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
-            // Optional: stop observing once faded in
-            // observer.unobserve(entry.target);
+            
+            // Trigger progress bars
+            const progressBars = entry.target.querySelectorAll('.progress');
+            progressBars.forEach(bar => {
+                const targetWidth = bar.getAttribute('data-width');
+                if (targetWidth) {
+                    bar.style.width = targetWidth;
+                }
+            });
         }
     });
 }, observerOptions);
@@ -98,3 +105,32 @@ setInterval(() => {
         glitchText.style.transform = 'none';
     }, 50);
 }, 3000);
+
+// --- NEW OVERHAUL EFFECTS ---
+
+// 1. Typing Effect for Subtitle
+const typingTextElement = document.getElementById('typing-text');
+if (typingTextElement && typingTextElement.textContent === "") {
+    const textToType = "Designing Intelligent Autonomous Systems for the Real World";
+    let typeIndex = 0;
+    
+    function typeEffect() {
+        if (typeIndex < textToType.length) {
+            typingTextElement.textContent += textToType.charAt(typeIndex);
+            typeIndex++;
+            setTimeout(typeEffect, 40); // Initial fast typing
+        }
+    }
+    setTimeout(typeEffect, 500);
+}
+
+// 2. Parallax Hero Background
+const heroBg = document.querySelector('.hero-bg-grid');
+if (heroBg && window.matchMedia("(pointer: fine)").matches) {
+    document.addEventListener("mousemove", (e) => {
+        const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+        const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+        heroBg.style.transform = `translate(${xAxis}px, ${yAxis}px)`;
+    });
+}
+

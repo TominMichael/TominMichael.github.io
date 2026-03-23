@@ -46,8 +46,9 @@
             <h3 class="highlight-text">Hi, I'm</h3>
             <h1 class="glitch-text name-glow" data-text="Tomin Michael">Tomin Michael</h1>
             <h2 class="role">Robotics & Automation Engineer</h2>
-            <p class="subtitle mt-10" style="color: var(--text-muted);">👉 "Bridging Simulation, AI, and Real-World
-                Robotics Systems"</p>
+            <p class="subtitle mt-10 typing-container" style="color: var(--primary);">
+                👉 "<span id="typing-text"></span><span class="cursor-blink">|</span>"
+            </p>
             <div class="tech-stack-badges mt-20">
                 <span class="badge">ROS2</span><span class="badge">Nav2</span><span class="badge">PX4</span><span
                     class="badge">Gazebo</span><span class="badge">PyTorch</span><span class="badge">YOLOv8</span><span
@@ -81,22 +82,12 @@
         </div>
         <div class="container about-grid">
             <div class="about-text glass-card">
-                <p>I am a <strong>Robotics & Automation Engineer</strong> specializing in designing and deploying
-                    scalable autonomous systems. With hands-on experience in <strong>ROS 2, LiDAR-based SLAM, Autonomous
-                        Navigation</strong>, and embedded control, I bridge the gap between abstract algorithms and
-                    robust hardware performance.</p>
-                <p>My expertise extends beyond navigation. I develop deep learning pipelines for perception tasks, such
-                    as real-time <strong>structural crack detection</strong> and <strong>object detection</strong>
-                    processing directly on-board autonomous drones and vehicles.</p>
-
-                <h4 class="highlight-text mt-20">Key Highlights</h4>
-                <ul class="highlights-list">
-                    <li><i class="fa-solid fa-check text-cyan"></i> Real-world robotics deployment & Sim-to-Real
-                        calibration</li>
-                    <li><i class="fa-solid fa-check text-cyan"></i> Deep learning for edge perception (Crack Detection,
-                        YOLOv8)</li>
-                    <li><i class="fa-solid fa-check text-cyan"></i> Strong sensor fusion integration (IMU + Encoders +
-                        GPS/LiDAR)</li>
+                <h3 class="highlight-text mb-10">System Architect & Robotics Engineer</h3>
+                <ul class="achievements-list mt-20">
+                    <li><i class="fa-solid fa-rocket text-cyan"></i><strong>Real-World Deployment:</strong> Engineered and deployed robust autonomous mobility stacks for indoor and complex environments.</li>
+                    <li><i class="fa-solid fa-microchip text-cyan"></i><strong>Hardware-Software Bridging:</strong> Experienced in bridging full-stack software logic (ROS 2/Nav2/Isaac Sim) directly to low-level hardware controllers.</li>
+                    <li><i class="fa-solid fa-eye text-cyan"></i><strong>Edge AI Capabilities:</strong> Developed real-time computer vision models (YOLOv8, U-Net++) operating natively on constrained edge devices like ESP32 and drones.</li>
+                    <li><i class="fa-solid fa-network-wired text-cyan"></i><strong>Sensor Fusion Mastery:</strong> Integrated diverse sensor suites (LiDAR, IMU, Encoders, Vision) using EKF and DeepOdom paradigms for high-precision state estimation.</li>
                 </ul>
             </div>
             <div class="about-stats glass-card text-center flex-center-col">
@@ -140,19 +131,19 @@
                     <li>
                         <div class="skill-info"><span>Python</span><span>90%</span></div>
                         <div class="progress-bar">
-                            <div class="progress" style="width: 90%;"></div>
+                            <div class="progress" data-width="90%" style="width: 0;"></div>
                         </div>
                     </li>
                     <li>
                         <div class="skill-info"><span>C++</span><span>80%</span></div>
                         <div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
+                            <div class="progress" data-width="80%" style="width: 0;"></div>
                         </div>
                     </li>
                     <li>
                         <div class="skill-info"><span>Embedded C</span><span>75%</span></div>
                         <div class="progress-bar">
-                            <div class="progress" style="width: 75%;"></div>
+                            <div class="progress" data-width="75%" style="width: 0;"></div>
                         </div>
                     </li>
                 </ul>
@@ -311,11 +302,10 @@
                 <div class="project-info">
                     <h3 class="project-title">Autonomous Wheelchair System</h3>
                     <ul class="project-details-list">
-                        <li><strong>📊 Metrics:</strong> Achieved reliable real-time navigation in indoor environments
-                        </li>
-                        <li><strong>🧠 Tech Stack:</strong> ROS 2 + Nav2 + ESP32 + micro-ROS</li>
-                        <li><strong>⚙️ Key Contribution:</strong> Implemented EKF-based sensor fusion (IMU + encoders) &
-                            designed full hardware-software integration pipeline</li>
+                        <li><strong>🔴 Problem:</strong> Dynamic indoor environments confuse standard mobility devices.</li>
+                        <li><strong>⚡ Solution:</strong> Developed a ROS 2 edge architecture using EKF fusion and micro-ROS.</li>
+                        <li><strong>🎯 Result:</strong> Achieved reliable real-time autonomous navigation and obstacle avoidance.</li>
+                        <li><strong>🧠 Tech Stack:</strong> ROS 2 + Nav2 + ESP32</li>
                     </ul>
                     <div class="project-links mt-20">
                         <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i>
@@ -342,11 +332,10 @@
                 <div class="project-info">
                     <h3 class="project-title">Panda Manipulator Simulation</h3>
                     <ul class="project-details-list">
-                        <li><strong>📊 Metrics:</strong> High-fidelity collision avoidance and dynamic trajectory
-                            execution</li>
-                        <li><strong>🧠 Tech Stack:</strong> NVIDIA Isaac Sim + MoViT + Python + Franka Emika</li>
-                        <li><strong>⚙️ Key Contribution:</strong> Developed advanced simulated motion planning for
-                            complex industrial manipulation</li>
+                        <li><strong>🔴 Problem:</strong> Complex manipulation requires highly optimized trajectory planning.</li>
+                        <li><strong>⚡ Solution:</strong> Developed simulated motion planning using MoViT within Isaac Sim.</li>
+                        <li><strong>🎯 Result:</strong> High-fidelity collision avoidance and dynamic trajectory execution.</li>
+                        <li><strong>🧠 Tech Stack:</strong> NVIDIA Isaac Sim + MoViT + Python</li>
                     </ul>
                     <div class="project-links mt-20">
                         <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i>
@@ -366,10 +355,10 @@
                 <div class="project-info">
                     <h3 class="project-title">Differential Drive Mobile Robot</h3>
                     <ul class="project-details-list">
-                        <li><strong>📊 Metrics:</strong> Generated 5cm-resolution occupancy grid maps in real-time</li>
+                        <li><strong>🔴 Problem:</strong> Creating accurate maps from scratch with constrained custom kinematics.</li>
+                        <li><strong>⚡ Solution:</strong> Designed a custom differential-drive system running SLAM + LiDAR.</li>
+                        <li><strong>🎯 Result:</strong> Generated accurate 5cm-resolution occupancy grid maps in real-time.</li>
                         <li><strong>🧠 Tech Stack:</strong> SLAM + LiDAR + Odometry</li>
-                        <li><strong>⚙️ Key Contribution:</strong> Designed and built differential-drive mobile robot
-                            from scratch with custom kinematics node</li>
                     </ul>
                     <div class="project-links mt-20">
                         <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i>
@@ -388,11 +377,10 @@
                 <div class="project-info">
                     <h3 class="project-title">Autonomous UAV Navigator</h3>
                     <ul class="project-details-list">
-                        <li><strong>📊 Metrics:</strong> Seamless switching between GPS/Dead Reckoning with <0.5m
-                                drift</li>
-                        <li><strong>🧠 Tech Stack:</strong> ROS 2 + PX4 + Trajectory Control</li>
-                        <li><strong>⚙️ Key Contribution:</strong> Implemented 3D helical ascent trajectory via ROS 2
-                            offboard control modes</li>
+                        <li><strong>🔴 Problem:</strong> Drones suffer from drift when switching positioning systems.</li>
+                        <li><strong>⚡ Solution:</strong> Implemented robust state estimation and a 3D helical trajectory.</li>
+                        <li><strong>🎯 Result:</strong> Seamless GPS/Dead Reckoning switching with <0.5m total drift.</li>
+                        <li><strong>🧠 Tech Stack:</strong> ROS 2 + PX4 + Offboard Control</li>
                     </ul>
                     <div class="project-links mt-20">
                         <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i>
@@ -412,10 +400,10 @@
                 <div class="project-info">
                     <h3 class="project-title">Crack Detection System</h3>
                     <ul class="project-details-list">
-                        <li><strong>📊 Metrics:</strong> >87% Dice coefficient on structural anomalies at 30 FPS</li>
+                        <li><strong>🔴 Problem:</strong> Manual structural inspection is slow and error-prone.</li>
+                        <li><strong>⚡ Solution:</strong> Optimized a custom Deep Learning segmentation model for the edge.</li>
+                        <li><strong>🎯 Result:</strong> Achieved >87% Dice coefficient on anomalies at a sustained 30 FPS.</li>
                         <li><strong>🧠 Tech Stack:</strong> Deep Learning + Edge AI + PyTorch</li>
-                        <li><strong>⚙️ Key Contribution:</strong> Optimized custom segmentation model for onboard
-                            real-time inference on drones</li>
                     </ul>
                     <div class="project-links mt-20">
                         <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i>
@@ -435,10 +423,10 @@
                 <div class="project-info">
                     <h3 class="project-title">Autonomous Vehicle Perception</h3>
                     <ul class="project-details-list">
-                        <li><strong>📊 Metrics:</strong> Maintained 0.85 mAP across 10,000+ test images</li>
+                        <li><strong>🔴 Problem:</strong> Level 2 AVs require robust perception across changing environments.</li>
+                        <li><strong>⚡ Solution:</strong> Fine-tuned deep learning pipelines heavily on varying light data.</li>
+                        <li><strong>🎯 Result:</strong> Maintained a consistent 0.85 mAP across 10,000+ test images.</li>
                         <li><strong>🧠 Tech Stack:</strong> YOLOv8 + Object Detection</li>
-                        <li><strong>⚙️ Key Contribution:</strong> Fine-tuned deep learning models for varied lighting
-                            scenarios in Level 2 AVs</li>
                     </ul>
                     <div class="project-links mt-20">
                         <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i>

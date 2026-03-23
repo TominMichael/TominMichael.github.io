@@ -982,3 +982,42 @@ footer {
 .project-details-list li strong {
     color: #fff;
 }
+
+/* Animations Overhaul */
+.progress {
+    transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
+}
+
+.cursor-blink {
+    font-weight: 800;
+    color: var(--primary);
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.typing-container {
+    min-height: 1.5rem;
+}
+
+/* About Achievements Overhaul */
+.achievements-list {
+    margin-top: 1rem;
+    list-style: none;
+}
+.achievements-list li {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.achievements-list li i {
+    margin-top: 6px;
+}
+.achievements-list li strong {
+    color: #fff;
+}
